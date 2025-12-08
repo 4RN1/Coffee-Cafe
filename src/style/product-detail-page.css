@@ -1,0 +1,42 @@
+.productDetail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 4rem 10rem 4rem;
+}
+
+
+.coffee-image img{
+  width: 30rem;
+  height: 30rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
+
+
+.coffee-details h1{
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+
+.coffee-details p{
+  font-size: 1.4rem;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+
+.price.coffee {
+  font-size: 2.5rem;
+}
+
+.productDetail button {
+  padding: 1rem 9rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  background-color: rgb(125, 214, 125);
+  color: white;
+}

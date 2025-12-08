@@ -1,0 +1,208 @@
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 15rem;
+  background-color: #ede9dc;
+}
+
+.navbar-list ul {
+  display: none;
+}
+
+.logo {
+  width: 12rem;
+}
+
+.toggle-menu {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 4rem;
+  color: #29211f;
+  font-weight: 800;
+}
+
+.navbar-mobile {
+  background-color: #e0ddd1;
+  color: #29211f;
+  font-size: 1.7rem;
+  height: 27rem;
+}
+
+.navbar-mobile {
+  display: none;
+}
+
+.navbar-mobile.active {
+  display: block;
+  background-color: #e0ddd1;
+  color: #29211f;
+  font-size: 1.7rem;
+}
+
+.navbar-mobile ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  font-weight: 800;
+  text-align: center;
+}
+
+.navbar-mobile li {
+  width: 100%;
+  border-bottom: 2px solid black;
+  padding: 2rem;
+}
+
+.navbar-mobile a {
+  color: #29211f;
+  text-decoration: none;
+}
+
+/* --------------------------------------------------- */
+
+/* FOOTER */
+
+.footer {
+  background-color: #342520;
+  height: 100%;
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.footer h4 {
+  color: #ede9dc;
+}
+
+.footer p {
+  color: #edf0e5;
+  font-size: 1.3rem;
+}
+
+.footer-box-1 {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-box-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.5rem;
+  gap: 1rem;
+}
+
+.footer-box-2 ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  color: #edf0e5;
+}
+
+.footer-box-4 a {
+  color: #edf0e5;
+
+  text-decoration: none;
+}
+
+.footer-box-3 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: #edf0e5;
+  font-size: 1.5rem;
+  gap: 1rem;
+}
+
+.footer-box-3 ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.footer-box-4 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: #edf0e5;
+  font-size: 1.5rem;
+  text-align: center;
+  
+  font-weight: 500;
+
+}
+
+.footer-box-4 ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+ gap:1rem;
+  
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  background-color: #342520;
+  color: #edf0e5;
+
+
+}
+
+/* რესპონსულობა  ტაბლეტი  600px  - 1023px */
+
+@media screen and (min-width: 728px) {
+  .navbar-list ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 5rem;
+    font-size: 1.7rem;
+    font-weight: 800;
+  }
+
+  .navbar-list a {
+    text-decoration: none;
+    color: #29211f;
+  }
+
+  .toggle-menu {
+    display: none;
+  }
+
+  .footer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 5rem;
+    height: 25rem;
+    align-items: center;
+    
+  }
+
+  .footer-box-1 img {
+    width: 17rem;
+    height: 17rem;
+  }
+
+
+  .footer-box-2 ul {
+    font-size: 1.3rem;
+    width: 22rem;
+  }
+
+  .footer-box-4 ul {
+gap:0.5rem;
+  }
+}
+
+
+
+

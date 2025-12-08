@@ -1,0 +1,237 @@
+.hero {
+  height: 100vh;
+}
+
+.hero-image {
+  background: url(../assets/hand-opening-reusable-coffee-cup.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  color: #000000;
+  font-size: 1.7rem;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.hero-image p {
+  font-weight: 800;
+}
+
+.heart {
+  color: red;
+}
+
+.products-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #dad0c7;
+}
+.products-container h1 {
+  color: #000000;
+  margin-top: 1rem;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+
+.product-view-container {
+  margin: 5rem 3rem 5rem 3rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #ede9dc;
+  height: 50rem;
+}
+
+.product-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.product-wrapper h2 {
+  font-size: 2.2rem;
+}
+
+.product-wrapper a {
+  border: none;
+  text-decoration: none;
+  background-color: #3a2522;
+  color: #ede9dc;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  font-weight: 700;
+}
+
+.product-wrapper a:hover {
+  transform: scale(1.05);
+}
+
+.special-sale {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.product-image img {
+  width: 100%;
+  height: 30rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+/* ---------------------------------------- */
+/* სამაღაზიო პროდუქტი */
+
+.pro {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: scroll;
+  scroll-snap-type:proximity;
+  padding: 1rem;
+  width: 100%;
+  margin-bottom: 10rem;
+}
+
+
+
+.store {
+  flex: 0 0 auto;
+  width: 22rem;
+  height: 40rem;
+  scroll-snap-align: center;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.5rem;
+  
+}
+
+.store img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.store a {
+  padding: 0.8rem 3rem;
+  border: none;
+  background-color: rgb(127, 209, 127);
+  color: white;
+  font-weight: 400;
+  letter-spacing: 2px;
+  border-radius: 0.5rem;
+  font-size: 1.4rem;
+  text-decoration: none;
+ 
+}
+
+.pro::-webkit-scrollbar {
+  display: none;
+}
+
+.image-section {
+  height: 21rem;
+  display: flex;
+}
+
+.store-buybutton {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.price {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.desc {
+  height: 5rem;
+}
+
+.store h2 {
+  font-size: 1.5rem;
+}
+
+/* -----------------HOVER------------------  */
+.store a:hover {
+  transform: scale(1.2);
+  background-color: #3a2522;
+  color: #ede9dc;
+}
+
+
+
+
+
+@media screen and (min-width: 1024px) {
+  .products-container h1 {
+    margin-top: 5rem;
+    font-size: 3rem;
+  }
+
+  .products {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  .product-view-container {
+    width: 39rem;
+    margin: 0;
+  }
+
+  .product-view-container:nth-child(5) {
+    grid-column: 2 / 3;
+  }
+
+  .product-wrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  .hero-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 3rem;
+    height: 100vh;
+  }
+
+  .pro::-webkit-scrollbar {
+  display: block;
+  
+}
+
+.pro::-webkit-scrollbar {
+  height: 8px;
+}
+
+.pro::-webkit-scrollbar-track {
+  background: #ede9dc;
+  border-radius: 20px;
+}
+
+.pro::-webkit-scrollbar-thumb {
+  background: #c7bfa8;
+  border-radius: 20px;
+}
+
+.pro::-webkit-scrollbar-thumb:hover {
+  background: #b3ab97;
+}
+
+}

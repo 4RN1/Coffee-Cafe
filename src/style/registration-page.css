@@ -1,0 +1,91 @@
+.reg-container h1 {
+text-align: center;
+}
+
+.reg-container img {
+width: 15rem;
+}
+
+.reg-container {
+ display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 5rem;
+  margin-bottom: 10rem;
+
+}
+
+
+.registration-login-form {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.7rem;
+  gap: 0.2rem;
+}
+
+.registration-login-form input {
+height: 4rem;
+font-size: 1.7rem;
+margin-bottom: 1.2rem;
+border:1px solid rgb(202, 196, 166);
+border-radius: 0.5rem;
+padding: 1rem;
+}
+
+.reg-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5rem;
+}
+
+.reg-btn button {
+  width: 30rem;
+  height: 5rem;
+  border-radius: 2rem;
+  border: none;
+
+   background-color:#3A2522 ;
+  color: #EDE9DC;
+  font-weight: 800;
+  letter-spacing: 0.4rem;
+  margin-bottom: 3rem;
+}
+
+.forgot-pswd {
+text-align: end;
+  font-size: 1.2rem;
+  color: rgb(0, 4, 255);
+  font-weight: bold;
+}
+
+.login {
+  color: blue;
+}
+
+.log {
+  font-size: 1.7rem;
+}
+
+
+
+
+
+
+
+.log-container h1 {
+text-align: center;
+}
+
+.log-container img {
+width: 15rem;
+}
+
+.log-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+  margin-bottom: 10rem;
+}
+
