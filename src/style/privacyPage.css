@@ -1,0 +1,28 @@
+.privacy-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  line-height: 1.7;
+  font-size: 1.6rem;
+  color: #342520;
+}
+
+.privacy-title {
+  font-size: 2.4rem;
+  margin-bottom: 1.5rem;
+  color: #29211f;
+  font-weight: 700;
+}
+
+.privacy-heading {
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #29211f;
+}
+
+.privacy-text {
+  margin-top: 1rem;
+  font-size: 1.6rem;
+  color: #342520;
+}

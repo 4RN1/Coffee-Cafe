@@ -1,12 +1,20 @@
 import "../style/home-page.css";
 import { coffeeBeans } from "../data/data";
 import { Link } from "react-router-dom";
-
+import AOS from "aos";
+import { useEffect } from "react";
 
 
 
 const Home = () => {
 
+ useEffect(() => {
+    AOS.init({
+      duration: 800,    // animation speed
+      easing: "ease-in-out",
+      once: true,       // whether animation happens only once
+    });
+  }, []);
 
   return (
     <>
@@ -20,9 +28,11 @@ const Home = () => {
       </div>
 {/* მენიუს შემოთავაზება*/}
       <div className="products-container" >
-        <h1 data-aos="fade-up" data-aos-delay="200">შეაფასე ჩვენი მენიუ!</h1>
-        <div className="products">
-          <div className="product-view-container" data-aos="fade-up" data-aos-delay="200">
+        <h1  data-aos="fade-up"
+  data-aos-delay="200">შეაფასე ჩვენი მენიუ!</h1>
+        <div className="products" >
+          <div className="product-view-container" data-aos="fade-up"
+  data-aos-delay="200"  >
             <div className="product-image">
               <img
                 src="https://res.cloudinary.com/dwvgnr2hy/image/upload/v1764951280/cup-hot-cappuccino-with-cinnamon-table_q5paey.jpg"
@@ -39,7 +49,8 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="product-view-container">
+          <div className="product-view-container" data-aos="fade-up"
+  data-aos-delay="200">
             <div className="product-image">
               <img
                 src="https://res.cloudinary.com/dwvgnr2hy/image/upload/v1764952300/coffee-5893926_1280_xdnfop.jpg"
@@ -56,7 +67,8 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="product-view-container">
+          <div className="product-view-container" data-aos="fade-up"
+  data-aos-delay="200">
             <div className="product-image">
               <img
                 src="https://res.cloudinary.com/dwvgnr2hy/image/upload/v1764951972/cup-166778_1280_icu8c9.jpg"
@@ -73,7 +85,8 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="product-view-container">
+          <div className="product-view-container" data-aos="fade-up"
+  data-aos-delay="200">
             <div className="product-image">
               <img
                 src="https://res.cloudinary.com/dwvgnr2hy/image/upload/v1764951603/cocktail-6950657_1280_guidqt.jpg"
@@ -90,7 +103,8 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="product-view-container">
+          <div className="product-view-container" data-aos="fade-up"
+  data-aos-delay="200">
             <div className="product-image">
               <img
                 src="https://res.cloudinary.com/dwvgnr2hy/image/upload/v1764951736/chocolate-ice-cream-2755456_1280_ebcemu.jpg"
@@ -107,7 +121,8 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="product-view-container">
+          <div className="product-view-container" data-aos="fade-up"
+  data-aos-delay="200">
             <div className="product-image">
               <img
                 src="https://res.cloudinary.com/dwvgnr2hy/image/upload/v1764951875/food-8425777_1280_w40uat.jpg"
@@ -129,7 +144,8 @@ const Home = () => {
 
       {/* სპეც შეთავაზება */}
 
-      <div className="special-sale" >
+      <div className="special-sale"  data-aos="fade-down"
+  data-aos-delay="200">
         <h1>ასევე შეიძინე ყავის მარცვლები ჩვენთან იდეალურ ფასში!</h1>
         <div className="pro" >
       {coffeeBeans.map(per => (

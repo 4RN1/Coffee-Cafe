@@ -9,6 +9,7 @@ import {
   food,
 } from "../data/data.js";
 import "../style/menu-page.css";
+import Aos from "aos";
 
 const Menu = () => {
 
@@ -17,7 +18,17 @@ useEffect(() => {
   window.scroll({top:0 , behavior:"smooth"})
 }, [])
 
+useEffect(() => {
+   Aos.init({
+        duration: 800,    // animation speed
+        easing: "ease-in-out",});
+} , [])
 
+useEffect(() => {
+  setTimeout(() => {
+    Aos.refresh();
+  }, 10);
+}, [activeCategory]);
   return (
     <>
       {/* კატეგორიები */}
@@ -37,7 +48,7 @@ useEffect(() => {
       {/* პროდუქტები */}
 <div className="products">
       {activeCategory === "hotCoffee" && hotCoffee.map(per => (
-        <div key={per.id} className="product-box">
+        <div key={per.id} className="product-box" data-aos="fade-up">
           <div className = "product-images">
             <img src={per.imgUrl} alt="" />
           </div>
@@ -52,7 +63,7 @@ useEffect(() => {
       ))}
 
   {activeCategory === "coldCoffee" && coldCoffee.map(per => (
-        <div key={per.id} className="product-box">
+        <div key={per.id} className="product-box" data-aos="fade-up">
           <div className = "product-images">
             <img src={per.imgUrl} alt="" />
           </div>
@@ -66,7 +77,7 @@ useEffect(() => {
         </div>
       ))}
         {activeCategory === "tea" && tea.map(per => (
-        <div key={per.id} className="product-box">
+        <div key={per.id} className="product-box" data-aos="fade-up">
           <div className = "product-images">
             <img src={per.imgUrl} alt="" />
           </div>
@@ -81,7 +92,7 @@ useEffect(() => {
       ))}
 
         {activeCategory === "spec" && specDrinks.map(per => (
-        <div key={per.id} className="product-box">
+        <div key={per.id} className="product-box" data-aos="fade-up">
           <div className = "product-images">
             <img src={per.imgUrl} alt="" />
           </div>
@@ -96,7 +107,7 @@ useEffect(() => {
       ))}
 
         {activeCategory === "ice" && iceCreams.map(per => (
-        <div key={per.id} className="product-box">
+        <div key={per.id} className="product-box" data-aos="fade-up">
           <div className = "product-images">
             <img src={per.imgUrl} alt="" />
           </div>
@@ -112,7 +123,7 @@ useEffect(() => {
 
 
         {activeCategory === "food" && food.map(per => (
-        <div key={per.id} className="product-box">
+        <div key={per.id} className="product-box" data-aos="fade-up">
           <div className = "product-images">
             <img src={per.imgUrl} alt="" />
           </div>
