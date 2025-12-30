@@ -32,16 +32,17 @@
   opacity: 0;
   transform: translateY(-20px); /* move it up slightly */
   background-color: #ede9dc;
- 
-
   color: #29211f;
   font-size: 1.7rem;
   height: 0;
   transition: all 0.3s ease-in-out;
   pointer-events: none; /* prevents clicking when hidden */
+
+
 }
 
 .navbar-mobile.active {
+
   
   opacity: 1;
   transform: translateY(0); /* move to original position */
@@ -49,6 +50,7 @@
 }
 
 .navbar-mobile ul {
+
   
   list-style: none;
   display: flex;
@@ -74,6 +76,9 @@
   color: #29211f;
   text-decoration: none;
 }
+
+
+
 
 /* --------------------------------------------------- */
 /* FOOTER */
