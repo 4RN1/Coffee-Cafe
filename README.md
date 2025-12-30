@@ -107,13 +107,14 @@ npm run preview
 
 ## 📷 Screenshots
 
-![Homepage](https://user-images.githubusercontent.com/yourusername/screenshots/homepage.png)
-*Menu page with categories*
+![Homepage](https://res.cloudinary.com/dkwh7oqpf/image/upload/v1767111142/Screenshot_2025-12-30_200943_amy0az.png)
+![Menu](https://res.cloudinary.com/dkwh7oqpf/image/upload/v1767111140/Screenshot_2025-12-30_200905_wfs7z2.png)
 
-![Mobile View](https://user-images.githubusercontent.com/yourusername/screenshots/mobile.png)
+
+
+![Mobile View](https://res.cloudinary.com/dkwh7oqpf/image/upload/v1767111214/Screenshot_2025-12-30_201322_oencq7.png)
 *Responsive mobile design*
 
-> Replace the screenshot URLs with your own images from the project.
 
 ---
 
