@@ -89,19 +89,6 @@ npm run preview
 
 ---
 
-## 📌 Deployment
-
-Deploy easily on **Vercel**:
-
-1. Create a new Vercel project
-2. Connect your GitHub repo
-3. Set root directory
-4. Deploy
-
-Vercel auto-detects Vite projects and builds them.
-
----
-
 ## ✨ How It Works
 
 * Clicking a **category tab** updates state and shows the selected products.
