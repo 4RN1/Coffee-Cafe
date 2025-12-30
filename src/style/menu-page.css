@@ -64,7 +64,7 @@ font-size: 1.5rem;
 }
 
 .product-price {
-  font-size: 1.9rem;
+  font-size: 2.5rem;
   font-weight: 800;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -73,6 +73,13 @@ font-size: 1.5rem;
 
 .product-images img{
   height: 25rem;
+}
+
+
+.menuActive {
+  transform: scale(1.1);
+  background-color: #3A2522;
+  color: white;
 }
 
 

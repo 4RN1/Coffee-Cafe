@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .contact-wrapper p {
@@ -14,7 +14,9 @@
   gap: 0.3rem;
   font-weight: 800;
   font-size: 1.5rem;
-
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .con-wrapper li {
@@ -78,6 +80,8 @@
 
 @media screen and (min-width:1024px) {
   
+
+
   .contact-wrapper h1{
     font-size: 2.3rem;
   
@@ -90,7 +94,7 @@
 
 .con-wrapper li{
   font-size: 2rem;
-  gap: 1rem;
+  
 }
 
   

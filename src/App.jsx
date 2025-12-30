@@ -19,15 +19,14 @@ function App() {
     <>
      
 
-   <Navbar/>
-     <Routes>
+    <Navbar/>
+    <Routes>
     <Route path="/" element={<Home/>} />
     <Route path="/menu" element={<Menu/>} />
     <Route path="/contact" element={<Contact/>} />
     <Route path="/registration" element={<Registration/>} />
     <Route path="/product/:id" element={<ProductDetailPage/>} />
     <Route path="/delivery" element={<Delivery/>} />
-    
     <Route path="/privacy" element={<PrivacyPage/>} />
 
 

@@ -61,6 +61,7 @@ text-align: end;
 
 .login {
   color: blue;
+  cursor: pointer;
 }
 
 .log {

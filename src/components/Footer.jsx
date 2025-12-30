@@ -66,9 +66,11 @@ const Footer = () => {
               <Link to="/registration">რეგისტრაცია</Link>
             </li>
           </ul>
+          
         </div>
+         <p className="copyright">&copy; 2025 ყველა უფლება დაცულია</p>
       </div>
-      <p className="copyright">&copy; 2025 ყველა უფლება დაცულია</p>
+     
     </>
   );
 };

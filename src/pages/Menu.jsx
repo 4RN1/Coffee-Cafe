@@ -14,6 +14,9 @@ import Aos from "aos";
 const Menu = () => {
 
  const  [activeCategory, setActiveCategory] = useState("hotCoffee");
+
+
+
 useEffect(() => {
   window.scroll({top:0 , behavior:"smooth"})
 }, [])
@@ -29,18 +32,21 @@ useEffect(() => {
     Aos.refresh();
   }, 10);
 }, [activeCategory]);
+
+
+
   return (
     <>
       {/* კატეგორიები */}
       <div className="category">
         <h1>მენიუ</h1>
         <ul>
-        <li onClick={() => setActiveCategory("hotCoffee")}>ცხელი ყავა</li>
-        <li onClick={() => setActiveCategory("coldCoffee")}>ცივი ყავა</li>
-        <li onClick={() => setActiveCategory("tea")}>ცხელი ჩაი</li>
-        <li onClick={() => setActiveCategory("spec")}>სპეც სასმელები</li>
-        <li onClick={() => setActiveCategory("ice")}>ნაყინები</li>
-        <li onClick={() => setActiveCategory("food")}>საჭმელი</li>
+        <li onClick={() => setActiveCategory("hotCoffee")} className={activeCategory === "hotCoffee" ? "menuActive" : ""}>ცხელი ყავა</li>
+        <li onClick={() => setActiveCategory("coldCoffee")} className={activeCategory === "coldCoffee" ? "menuActive" : ""}>ცივი ყავა</li>
+        <li onClick={() => setActiveCategory("tea")} className={activeCategory === "tea" ? "menuActive" : ""}>ცხელი ჩაი</li>
+        <li onClick={() => setActiveCategory("spec")} className={activeCategory === "spec" ? "menuActive" : ""}>სპეც სასმელები</li>
+        <li onClick={() => setActiveCategory("ice")} className={activeCategory === "ice" ? "menuActive" : ""}>ნაყინები</li>
+        <li onClick={() => setActiveCategory("food")} className={activeCategory === "food" ? "menuActive" : ""}>საჭმელი</li>
 
         </ul>
       </div>

@@ -32,7 +32,7 @@ const Registration = () => {
             <button>რეგისტრაცია</button>
           </div>
         </form>
-          <p className="log">გააქვს ანგარიში? <span className="login" onClick={() =>{  setshow(true)}}>შესვლა</span></p>
+          <p className="log">გაქვს ანგარიში? <span className="login" onClick={() =>{  setshow(true)}}>შესვლა</span></p>
       </div>
 
       )}
@@ -64,7 +64,7 @@ const Registration = () => {
           </div>
 
 
-          <p className="log">არ გააქვს ანგარიში? <span className="login" onClick={() => setshow(false)}>რეგისტრაცია</span></p>
+          <p className="log">არ გაქვს ანგარიში? <span className="login" onClick={() => setshow(false)}>რეგისტრაცია</span></p>
         </form>
       </div>
       )}
