@@ -28,25 +28,6 @@ A responsive **React + Vite** coffee shop website showcasing a menu with categor
 * **CSS** — Styling
 * **Vercel** — Deployment
 
----
-
-## 📁 Project Structure
-
-```
-src/
-├─ assets/
-├─ components/
-│   └─ Navbar.jsx
-├─ context/
-├─ data/
-│   └─ data.js
-├─ pages/
-│   └─ Menu.jsx
-├─ style/
-│   └─ menu-page.css
-├─ App.jsx
-└─ main.jsx
-```
 
 ---
 
